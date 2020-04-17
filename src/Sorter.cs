@@ -7,10 +7,11 @@ namespace sortExercise.src
 
 		public Sorter() { }
 
-		public static int[] quickSort(int[] vetor)
+		public int[] quickSort(int[] vetor)
 		{
 			int inicio = 0;
 			int fim = vetor.Length - 1;
+
 
 			quickSort(vetor, inicio, fim);
 
@@ -19,7 +20,7 @@ namespace sortExercise.src
 
 		private static void quickSort(int[] vetor, int inicio, int fim)
 		{
-
+			
 			if (inicio < fim)
 			{
 				int p = vetor[inicio];

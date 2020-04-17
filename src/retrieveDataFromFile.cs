@@ -1,33 +1,35 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
 namespace sortExercise.src
 {
     class retrieveDataFromFile
     {
-        public retrieveDataFromFile ()
-        {
+        public retrieveDataFromFile (){}
 
-        }
+        string[] Lines = File.ReadAllLines(@"C:\Users\GabrielFerreira\Documents\repos\sortExercise\src\scrambled.txt");
 
-        public ArrayList ReturnFileData()
+        public int[] ReturnFileData()
         {
-            ArrayList ParsedLines = new ArrayList();
+            int[] ParsedLines = new int[]{}; 
             try
             {
                 string[] Lines = File.ReadAllLines(@"C:\Users\GabrielFerreira\Documents\repos\sortExercise\src\scrambled.txt");
 
-                foreach (string line in Lines) 
+                for (int i = 0; i > Lines.Length; i++) 
                 {
-                    ParsedLines.Add(Convert.ToInt32(line));
+                    ParsedLines[i] = Convert.ToInt16(Lines[i]);
                 }
             }
             catch (System.IO.DirectoryNotFoundException e) { Console.WriteLine(e); }
 
             return ParsedLines;
+        }
+
+        public int OrignalFileLineCount () 
+        {
+            return Lines.Length;
         }
     }
 }

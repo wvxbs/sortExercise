@@ -1,18 +1,20 @@
 ﻿using System;
-using System.IO;
 using sortExercise.src;
 
 namespace sortExercise
 {
 	class Program
 	{
-		public static void Main(string[] args) 
+		public static void Main(string[] args)
 		{
 			retrieveDataFromFile r = new retrieveDataFromFile();
 			Sorter s = new Sorter();
-			foreach(int i in r.ReturnFileData()){
-				Console.WriteLine(i);
-			}
+			writeToFile wr = new writeToFile(r.ReturnFileData());
+			s.quickSort(r.ReturnFileData());
+			wr.SaveDataToNewFile();
+
+
+			//s.quickSort(FileData);
 			///Console.WriteLine(FileDataArray);
 		}
 	}
