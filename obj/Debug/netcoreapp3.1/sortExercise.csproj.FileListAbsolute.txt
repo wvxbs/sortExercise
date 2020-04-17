@@ -1,0 +1,13 @@
+C:\Users\GabrielFerreira\documents\repos\sortExercise\bin\Debug\netcoreapp3.1\sortExercise.exe
+C:\Users\GabrielFerreira\documents\repos\sortExercise\bin\Debug\netcoreapp3.1\sortExercise.deps.json
+C:\Users\GabrielFerreira\documents\repos\sortExercise\bin\Debug\netcoreapp3.1\sortExercise.runtimeconfig.json
+C:\Users\GabrielFerreira\documents\repos\sortExercise\bin\Debug\netcoreapp3.1\sortExercise.runtimeconfig.dev.json
+C:\Users\GabrielFerreira\documents\repos\sortExercise\bin\Debug\netcoreapp3.1\sortExercise.dll
+C:\Users\GabrielFerreira\documents\repos\sortExercise\bin\Debug\netcoreapp3.1\sortExercise.pdb
+C:\Users\GabrielFerreira\documents\repos\sortExercise\obj\Debug\netcoreapp3.1\sortExercise.csprojAssemblyReference.cache
+C:\Users\GabrielFerreira\documents\repos\sortExercise\obj\Debug\netcoreapp3.1\sortExercise.csproj.CoreCompileInputs.cache
+C:\Users\GabrielFerreira\documents\repos\sortExercise\obj\Debug\netcoreapp3.1\sortExercise.AssemblyInfoInputs.cache
+C:\Users\GabrielFerreira\documents\repos\sortExercise\obj\Debug\netcoreapp3.1\sortExercise.AssemblyInfo.cs
+C:\Users\GabrielFerreira\documents\repos\sortExercise\obj\Debug\netcoreapp3.1\sortExercise.dll
+C:\Users\GabrielFerreira\documents\repos\sortExercise\obj\Debug\netcoreapp3.1\sortExercise.pdb
+C:\Users\GabrielFerreira\documents\repos\sortExercise\obj\Debug\netcoreapp3.1\sortExercise.genruntimeconfig.cache
