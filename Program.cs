@@ -11,11 +11,7 @@ namespace sortExercise
 			Sorter s = new Sorter();
 			writeToFile wr = new writeToFile(r.ReturnFileData());
 			s.quickSort(r.ReturnFileData());
-			wr.SaveDataToNewFile();
-
-
-			//s.quickSort(FileData);
-			///Console.WriteLine(FileDataArray);
+			wr.saveDataToNewFile();
 		}
 	}
 }
