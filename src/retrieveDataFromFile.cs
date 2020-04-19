@@ -15,15 +15,12 @@ namespace sortExercise.src
             int[] ParsedLines = new int[]{}; 
             try
             {
-                string[] Lines = File.ReadAllLines(@"C:\Users\GabrielFerreira\Documents\repos\sortExercise\src\scrambled.txt");
-
                 for (int i = 0; i > Lines.Length; i++) 
                 {
-                    ParsedLines[i] = Convert.ToInt16(Lines[i]);
+                    ParsedLines[i] = Convert.ToInt32(Lines[i]);
                 }
             }
             catch (System.IO.DirectoryNotFoundException e) { Console.WriteLine(e); }
-
             return ParsedLines;
         }
 

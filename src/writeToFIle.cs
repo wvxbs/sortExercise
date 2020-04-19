@@ -5,19 +5,20 @@ namespace sortExercise.src
 {
     class writeToFile
     {
-        int [] ScrambledFileData = new int [] {};
+        int [] ScrambledFileData = new int[]{};
 
         public writeToFile(int []scrambledfiledata)
-        {   
-            this.ScrambledFileData = scrambledfiledata;
+        {
+            Console.WriteLine(scrambledfiledata.Length);
+            for(int i = 0; i > scrambledfiledata.Length; i++)
+            {
+                this.ScrambledFileData[i] = scrambledfiledata[i];
+            }
         }
 
         public void saveDataToNewFile () 
         {
-            for(int i =0; i < ScrambledFileData.Length; i++) 
-            {
-                
-            }            
+            Console.WriteLine(ScrambledFileData.Length);          
         }
     }
 }
