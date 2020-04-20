@@ -4,7 +4,7 @@ namespace sortExercise.src
 {
 	class Sorter
 	{
-		public Sorter() { }
+		public Sorter() {}
 
 		public int[] quickSort(int[] vetor)
 		{
@@ -28,11 +28,11 @@ namespace sortExercise.src
 
 				while (i <= f)
 				{
-					if (vetor[i] <= p)
+					if (vetor[i] >= p)
 					{
 						i++;
 					}
-					else if (p < vetor[f])
+					else if (p > vetor[f])
 					{
 						f--;
 					}

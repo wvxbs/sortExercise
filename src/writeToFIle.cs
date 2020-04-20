@@ -11,6 +11,7 @@ namespace sortExercise.src
             for(int i =0; i < ScrambledFileData.Length; i++) {
                 sw.WriteLine(ScrambledFileData[i]);
             }
+            Console.WriteLine("data writen");
         }
     }
 }
