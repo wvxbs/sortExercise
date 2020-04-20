@@ -7,12 +7,11 @@ namespace sortExercise
 	{
 		public static void Main(string[] args)
 		{
-			retrieveDataFromFile r = new retrieveDataFromFile();
+			retrieveDataFromFile r = new retrieveDataFromFile(@"C:\Users\GabrielFerreira\Documents\repos\sortExercise\src\scrambled.txt");
+			writeToFile wr = new writeToFile();
 			Sorter s = new Sorter();
-			Console.WriteLine(Convert.ToString(r.ReturnFileData().Length));
-			writeToFile wr = new writeToFile(r.ReturnFileData());
-			s.quickSort(r.ReturnFileData());
-			wr.saveDataToNewFile();
+			int [] ordenedArray = s.quickSort(r.fileData());
+			wr.saveDataToNewFile(ordenedArray);
 		}
 	}
 }
