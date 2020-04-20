@@ -4,7 +4,6 @@ namespace sortExercise.src
 {
 	class Sorter
 	{
-
 		public Sorter() { }
 
 		public int[] quickSort(int[] vetor)

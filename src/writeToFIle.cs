@@ -1,11 +1,12 @@
 using System;
 using System.IO;
-
+        
 namespace sortExercise.src
 {
     class writeToFile
     {
         int [] ScrambledFileData = new int[]{};
+        StreamWriter sw = new StreamWriter(@"C:\Users\GabrielFerreira\Documents\repos\sortExercise\src\result.txt");
 
         public writeToFile(int []scrambledfiledata)
         {
@@ -18,7 +19,7 @@ namespace sortExercise.src
 
         public void saveDataToNewFile () 
         {
-            Console.WriteLine(ScrambledFileData.Length);          
+            Console.WriteLine(ScrambledFileData.Length);
         }
     }
 }
