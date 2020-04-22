@@ -5,10 +5,18 @@ namespace sortExercise.src
 {
     class writeToFile
     {
+        string FilePath = "";
 
-        public void saveDataToNewFile (int[] ScrambledFileData) {
-            StreamWriter sw = new StreamWriter(@"C:\Users\GabrielFerreira\Documents\repos\sortExercise\src\result.txt");
-            for(int i =0; i < ScrambledFileData.Length; i++) {
+        public writeToFile(string FilePath)
+        {
+            this.FilePath = FilePath;
+        }
+
+        public void saveDataToNewFile (int[] ScrambledFileData) 
+        {
+            StreamWriter sw = new StreamWriter(FilePath);
+            for(int i =0; i < ScrambledFileData.Length; i++) 
+            {
                 sw.WriteLine(ScrambledFileData[i]);
             }
             Console.WriteLine("data writen");

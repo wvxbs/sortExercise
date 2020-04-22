@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GabrielFerreira\\Documents\\repos\\sortExercise\\sortExercise.csproj": {}
+    "C:\\Users\\GabrielFerreira\\documents\\repos\\sortexercise\\sortExercise.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GabrielFerreira\\Documents\\repos\\sortExercise\\sortExercise.csproj": {
+    "C:\\Users\\GabrielFerreira\\documents\\repos\\sortexercise\\sortExercise.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GabrielFerreira\\Documents\\repos\\sortExercise\\sortExercise.csproj",
+        "projectUniqueName": "C:\\Users\\GabrielFerreira\\documents\\repos\\sortexercise\\sortExercise.csproj",
         "projectName": "sortExercise",
-        "projectPath": "C:\\Users\\GabrielFerreira\\Documents\\repos\\sortExercise\\sortExercise.csproj",
+        "projectPath": "C:\\Users\\GabrielFerreira\\documents\\repos\\sortexercise\\sortExercise.csproj",
         "packagesPath": "C:\\Users\\GabrielFerreira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GabrielFerreira\\Documents\\repos\\sortExercise\\obj\\",
+        "outputPath": "C:\\Users\\GabrielFerreira\\documents\\repos\\sortexercise\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

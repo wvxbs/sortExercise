@@ -12,9 +12,10 @@ namespace sortExercise.src
 
         private string[] AccessFileData()
         {
+            Console.WriteLine($"Arquivo localizado em {FilePath}");
             string[] FileLineContent = File.ReadAllLines(""+ FilePath + "");
 
-            return FileLineContent;    
+            return FileLineContent;
         }
 
         private int [] ParseFileData() {
@@ -26,7 +27,7 @@ namespace sortExercise.src
 
         public int [] fileData() {
             int[] parsedFileData = ParseFileData();
-
+            
             return parsedFileData;
         }
     }  

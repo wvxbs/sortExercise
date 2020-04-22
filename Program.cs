@@ -7,9 +7,9 @@ namespace sortExercise
 	{
 		public static void Main(string[] args)
 		{
-			int select = 0;
+			retrieveDataFromFile r = new retrieveDataFromFile(@"C:\Users\GabrielFerreira\Documents\repos\sortExercise\src\scrambled.txt");
 
-			Exercises e = new Exercises();
+			int select = 0;
 
 			Console.WriteLine("Exercício 1: \n digite 1");
 			Console.WriteLine("Exercício 2: \n digite 2");
@@ -19,13 +19,19 @@ namespace sortExercise
 			switch(select)
 			{
 				case 1:
-					e.firstExercise();
+					writeToFile wr = new writeToFile(@"C:\Users\GabrielFerreira\documents\repos\sortExercise\src\ex1Result.txt");
+					Sorter s = new Sorter();
+					int [] ordenedArray = s.quickSort(r.fileData());
+					wr.saveDataToNewFile(ordenedArray);
 				break;
 				case 2:
-					e.secondExercise();
+					Multiplier m = new Multiplier(1953, 5378);
+					m.Result(r.fileData());
 				break;
 				case 3:
-					e.thirdExercise();
+					writeToFile wt = new writeToFile(@"C:\Users\GabrielFerreira\documents\repos\sortExercise\src\ex2Result.txt");		
+					getMultiples gt = new getMultiples(350, r.fileData());
+					wt.saveDataToNewFile(gt.CalculateMultiples());		
 				break;
 				default:
 					Console.WriteLine("error");
