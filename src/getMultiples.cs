@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace sortExercise.src 
 {
@@ -15,17 +16,19 @@ namespace sortExercise.src
 
         public int [] CalculateMultiples ()
         {
-            int [] Result = new int [ScrambledFileData.Length];
+            List<int> l = new List<int>();
 
             for(int i = 0; i < ScrambledFileData.Length; i++) 
             {
                 if(ScrambledFileData[i] % Num == 0) 
                 {
-                    Result[i] = ScrambledFileData[i];
+                    l.Add(ScrambledFileData[i]);
                 } 
             }
 
-            return Result;
+
+
+            return l.ToArray();
         }
     }
 }

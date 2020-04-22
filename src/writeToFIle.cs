@@ -14,10 +14,12 @@ namespace sortExercise.src
 
         public void saveDataToNewFile (int[] ScrambledFileData) 
         {
-            StreamWriter sw = new StreamWriter(FilePath);
-            for(int i =0; i < ScrambledFileData.Length; i++) 
+            using(StreamWriter sw = new StreamWriter(FilePath))
             {
-                sw.WriteLine(ScrambledFileData[i]);
+                for(int i =0; i < ScrambledFileData.Length; i++) 
+                {
+                    sw.WriteLine(ScrambledFileData[i]);
+                }
             }
             Console.WriteLine("data writen");
         }
