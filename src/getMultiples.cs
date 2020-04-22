@@ -6,7 +6,6 @@ namespace sortExercise.src
     {
         int Num = 0;
         int [] ScrambledFileData;
-        int [] Result = new int []{};
 
         public getMultiples (int num, int[] ScrambledFileData)
         {
@@ -16,10 +15,16 @@ namespace sortExercise.src
 
         public int [] CalculateMultiples ()
         {
+            int [] Result = new int [ScrambledFileData.Length];
+
             for(int i = 0; i < ScrambledFileData.Length; i++) 
             {
-                if(ScrambledFileData[i] != 0) Result[i] = ScrambledFileData[i]; 
+                if(ScrambledFileData[i] % Num == 0) 
+                {
+                    Result[i] = ScrambledFileData[i];
+                } 
             }
+
             return Result;
         }
     }
